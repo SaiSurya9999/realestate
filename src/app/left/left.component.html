@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()"> 
+    <div class="form-group">
+        <label for="exampleInputEmail1">Task Name</label>
+        <input formControlName="task" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter task">
+
+    </div>
+    <button type="submit" class="btn btn-primary">Add Task</button>
+</form>
