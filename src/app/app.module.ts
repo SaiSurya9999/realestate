@@ -9,6 +9,10 @@ import { RightComponent } from './right/right.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarousalComponent } from './carousal/carousal.component';
 import { HomeComponent } from './home/home.component';
+import { LegionComponent } from './legion/legion.component';
+import { LegionLeftComponent } from './legion-left/legion-left.component';
+import { LegionRightComponent } from './legion-right/legion-right.component';
+import { LegionService } from './legion.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,10 @@ import { HomeComponent } from './home/home.component';
     LeftComponent,
     RightComponent,
     CarousalComponent,
-    HomeComponent
+    HomeComponent,
+    LegionComponent,
+    LegionLeftComponent,
+    LegionRightComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +32,7 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [LegionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
