@@ -7,13 +7,15 @@ import { TestComponent } from './test/test.component';
 import { LeftComponent } from './left/left.component';
 import { RightComponent } from './right/right.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CarousalComponent } from './carousal/carousal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     LeftComponent,
-    RightComponent
+    RightComponent,
+    CarousalComponent
   ],
   imports: [
     BrowserModule,

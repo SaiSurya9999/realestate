@@ -1,0 +1,68 @@
+<!-- ======= hero Section ======= -->
+<section id="hero">
+    <div class="hero-container">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+            <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+            <div class="carousel-inner" role="listbox">
+
+                <div [ngClass]="{ 'active': slideActive==0 }" class="carousel-item"
+                    style="background-image: url(assets/img/hero-carousel/1.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">We are a manufacturer of hard surface
+                                products, including Quartz, Natural Stone and high
+                                performance innovative Compact Surface Products. </h2>
+                            <p class="animate__animated animate__fadeInUp">
+
+                                Only installing certified 1st quality
+                                products to achieve our customers vision first.
+                            </p>
+                            <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get
+                                Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div [ngClass]="{ 'active': slideActive==1 }" class="carousel-item"
+                    style="background-image: url(assets/img/hero-carousel/2.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">At vero eos et accusamus</h2>
+                            <p class="animate__animated animate__fadeInUp">Helping Business Security & Peace of Mind for
+                                Your Family
+                            </p>
+                            <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get
+                                Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div [ngClass]="{ 'active': slideActive==2 }" class="carousel-item"
+                    style="background-image: url(assets/img/hero-carousel/3.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">Temporibus autem quibusdam</h2>
+                            <p class="animate__animated animate__fadeInUp">Beatae vitae dicta sunt explicabo. Nemo enim
+                                ipsam
+                                voluptatem</p>
+                            <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get
+                                Started</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a (click)="prev()" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a (click)="next()" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+        </div>
+    </div>
+</section><!-- End Hero Section -->

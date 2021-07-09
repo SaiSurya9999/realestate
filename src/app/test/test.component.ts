@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.scss']
 })
 export class TestComponent implements OnInit {
+  public dummy: Array<any> = ["Test", "gsdgvazs"];
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
+  updateData(event) {
+    this.dummy.push(event);
 
+  }
 }
